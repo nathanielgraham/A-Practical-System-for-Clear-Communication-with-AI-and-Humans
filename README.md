@@ -1,8 +1,8 @@
 # A Practical System for Clear Communication with AI and Humans
 
-Version: 1.4 
-Author: Nathaniel Graham assisted by Grok 4.3
-Origin: Originally developed during AI-assisted coding projects. See [Cron::Toolkit](https://metacpan.org/pod/Cron::Toolkit)
+  **Version**: 1.4 
+  **Author**: Nathaniel Graham assisted by Grok 4.3
+  **Origin**: Originally developed during AI-assisted coding projects. See [Cron::Toolkit](https://metacpan.org/pod/Cron::Toolkit)
 
 ## Why This Framework?
 
