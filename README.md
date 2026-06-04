@@ -1,6 +1,6 @@
 # A Practical System for Clear Communication with AI and Humans
 
-Originally developed during AI-assisted coding projects, this 9-step system dramatically improves response quality from AIs and enhances clarity in human conversations.
+Originally developed with assistance from Grok 4.3 during a coding project, this 9-step system dramatically improves response quality from AIs and enhances clarity in human conversations.
 
 # The 9 Steps
 
@@ -9,7 +9,7 @@ Originally developed during AI-assisted coding projects, this 9-step system dram
    Example: [ED: Done = fully tested, documented, and reviewed]
 
 2. Logical Sequencing (LS)  
-   Organize thoughts in cause-effect or step-by-step order.  
+   Organize thoughts in cause-effect or step-by-step order. 
    Example: [LS: Step1=research; precedes; Step2=design; precedes; Step3=implement]
 
 3. Conditionals and Alternatives (CA)  
@@ -53,7 +53,7 @@ Originally developed during AI-assisted coding projects, this 9-step system dram
 - **Watch Tone and Read the Room**: Combine with warm EC statements. If someone seems overwhelmed or annoyed, drop the tags immediately.
 - **Gradual Adoption**: Be patient — many people (especially technical ones) start appreciating the clarity after a few interactions.
 
-## Templates for Human Communication
+## Examples in Human Communication
 
 ### 1. Light / Casual
 
