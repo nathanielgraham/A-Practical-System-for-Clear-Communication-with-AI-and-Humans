@@ -1,14 +1,8 @@
 # A Practical System for Clear Communication with AI and Humans
 
-**Version**: 1.4  
-**Author**: Nathaniel Graham assisted by Grok 4.3  
-**Origin**: Originally developed during AI-assisted coding projects. See [Cron::Toolkit](https://metacpan.org/pod/Cron::Toolkit)  
+Originally developed during AI-assisted coding projects, this 9-step system dramatically improves response quality from AIs and enhances clarity in human conversations.
 
-## Why This Framework?
-
-This system reduces misunderstandings, dramatically improves response quality from AIs, and enhances clarity in human conversations. It combines logical precision (ideal for AI) with emotional awareness and adaptability (ideal for humans).
-
-## The 9 Steps
+# The 9 Steps
 
 1. Explicit Definitions (ED)  
    Define key terms upfront or inline to avoid ambiguity.  
