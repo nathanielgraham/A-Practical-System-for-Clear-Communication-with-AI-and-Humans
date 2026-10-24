@@ -1,15 +1,18 @@
 # A Practical System for Clear Communication with AI and Humans
 
-Originally developed with assistance from Grok 4.3 during a coding project, this 9-step system dramatically improves response quality from AIs and enhances clarity in human conversations.
+Originally developed with assistance from Grok during a coding project, this framework is now used primarily as a tool for clarifying one’s own thinking across domains. It remains useful for communication with agents and (more cautiously) with other humans.
+
+The nine steps below are still the full set. In practice, only a subset is usually needed.
 
 # The 9 Steps
 
 1. Explicit Definitions (ED)  
    Define key terms upfront or inline to avoid ambiguity.  
-   Example: [ED: Done = fully tested, documented, and reviewed]
+   Example: [ED: Done = fully tested, documented, and reviewed]  
+   Note: With humans this can sometimes feel condescending even when unintended. Use sparingly and prefer plain phrasing (“when I say done I mean…”) over a labeled tag.
 
 2. Logical Sequencing (LS)  
-   Organize thoughts in cause-effect or step-by-step order. 
+   Organize thoughts in cause-effect or step-by-step order.  
    Example: [LS: Step1=research; precedes; Step2=design; precedes; Step3=implement]
 
 3. Conditionals and Alternatives (CA)  
@@ -18,11 +21,12 @@ Originally developed with assistance from Grok 4.3 during a coding project, this
 
 4. Quantification and Precision (QP)  
    Replace vague language with specific numbers or ranges.  
-   Example: "Takes roughly 3-5 hours" instead of "takes some time".
+   Example: “Takes roughly 3–5 hours” instead of “takes some time”.
 
 5. Verification Tags (VT)  
    Indicate the reliability and source of claims.  
-   Example: [VT: observation; source=local_testing; confidence=90%]
+   Example: [VT: observation; source=local_testing; confidence=90%]  
+   With agents this improves inspectability and can slightly reduce confident overclaiming, but does not strongly prevent hallucinations on its own. Agents can still mislabel the epistemic status. Most useful for factual or research-style work; lower priority than ED, FC, and CTA for routine tasks.
 
 6. Emotional Context (EC)  
    Share tone or feelings.  
@@ -34,7 +38,8 @@ Originally developed with assistance from Grok 4.3 during a coding project, this
 
 8. Feedback & Calibration (FC)  
    Actively invite clarification and questions.  
-   Example: [FC: Any assumptions to check? Questions?]
+   Example: [FC: Any assumptions to check? Questions?]  
+   Especially important with agents: without an explicit invitation to ask, they will usually fill gaps with assumptions rather than clarify. Still useful with humans, but keep the phrasing low-pressure.
 
 9. Clear Call to Action (CTA)  
    End with a precise instruction on next steps.  
@@ -42,104 +47,77 @@ Originally developed with assistance from Grok 4.3 during a coding project, this
 
 ---
 
-## Tips for Using with Humans
+## Current Usage Priorities
 
-- **Start Light and Explain First**: Don’t jump straight into tags. Briefly introduce the idea (“I’ve been experimenting with a structured way to communicate more clearly...”) and begin with natural language.
-- **Seek Buy-in**: Always ask if the other person is open to it (“Would it help if I organized my thoughts this way?”). Never force the system.
-- **Use Sparingly**: Start with just 2–4 tags per message (especially ED, EC, FC, and CTA) until others get comfortable.
-- **Translate into Natural Language**: Use the framework as a thinking tool, then convert most tags into smooth, normal sentences for better flow.
-- **Emphasize Benefits**: Frame it as a tool for mutual understanding and saving time, not as rigid rules.
-- **Adapt to Context**: Use more structure in professional or important discussions. Keep it minimal or invisible in casual or emotional conversations.
-- **Watch Tone and Read the Room**: Combine with warm EC statements. If someone seems overwhelmed or annoyed, drop the tags immediately.
-- **Gradual Adoption**: Be patient — many people (especially technical ones) start appreciating the clarity after a few interactions.
+**Self-thinking (primary use):**  
+Any of the steps can help, depending on the problem. ED, LS, CA, and QP are the ones most often applied privately to force clearer reasoning before speaking or writing.
 
-## Examples in Human Communication
+**With agents:**  
+ED, FC, and CTA are the high-value core.  
+- ED reduces invented definitions.  
+- FC is non-optional in collaborative or multi-turn work; agents default to assuming rather than asking.  
+- CTA keeps the output bounded and actionable.  
+The remaining steps can be added when useful but are not required once these three are solid. VT is optional and mainly improves inspectability of factual claims.
 
-### 1. Light / Casual
-
-"Hey folks,
-
-Quick update on the scheduling module. By 'complete' I mean tested and documented. 
-
-If we can wrap this by end of week, excellent — otherwise let's target early next week.
-
-I'm optimistic but want to hear your take. Any concerns?"
-
-### 2. Professional Email
-
-Subject: Proposed Timeline for Cron::Toolkit Enhancements
-
-Hi [Name],
-
-[ED: Success = delivering stable, well-documented features that users love.]
-
-I've structured my thoughts as follows:
-1. Review current gaps
-2. Prioritize improvements
-3. Suggested timeline: 4-6 weeks
-
-[CA: If we get design help → reduce to 3-4 weeks]
-
-[EC: excited about the potential]
-
-[FC: Does this align with your priorities? Anything I overlooked?]
-
-[CTA: Please share your feedback by Thursday so we can finalize the plan.]
-
-Best regards,  
-Nathaniel
-
-### 3. Collaborative / Brainstorming
-
-"[ED: Goal = generate practical ideas we can actually implement]  
-[EC: enthusiastic and open]
-
-Here's my starting point:  
-[LS: ...]
-
-[CA: if we go with Option A → faster delivery but fewer features...]
-
-[FC: What am I missing? How does this land with you?]
-
-[CTA: Can you add your ideas or suggest alternatives?]"
+**With humans:**  
+LS, FC, and CTA, used lightly. ED only when a term is genuinely contested or high-stakes, and preferably without the tag.  
+Some people read explicit definitions or visible structure as talking down to them. Keep tags (and even the visible discipline) minimal, frame any structure as “here’s how I’m thinking about it,” and drop it immediately if the other person seems uncomfortable. Plain language that is precise often works better than labeled steps.
 
 ---
 
-## Tips for Using with AI
+## Tips for Using with Humans
 
-- Share the Full Framework First: At the beginning of a new chat or project, always paste the complete "The 9 Steps" section (with explanations and examples) before using any templates. This ensures the AI fully understands what each tag means.  
+- Start light. Do not open with tags. Use ordinary language first.
+- ED is higher-risk than the other steps. Prefer “when I say X I mean…” or simply using the precise term without calling it a definition. Labeled ED blocks are more likely to land as condescending.
+- Prefer LS, a light FC, and a clear CTA. Keep even those mostly invisible.
+- Translate structure into normal sentences. Use the framework as a thinking tool, then write naturally.
+- Watch the room. If someone seems annoyed or confused by the structure, stop using tags at once.
+- A plain “Any assumptions I should check?” still helps without sounding systematic.
 
-- Reference After Setup: Once shared, simply say “Using the 9-step framework...” in future messages.
+## Tips for Using with Agents
 
-- Use Tags Selectively: Full tagged mode for complex tasks. Plain English guided by the structure for routine questions.
+- Share the framework (or at least the relevant steps) once at the start of a project or long thread if you want the agent to mirror the style.
+- Treat FC as required for anything collaborative. Explicitly invite questions and assumption checks.
+- ED + FC + CTA is usually sufficient. Add others only when they reduce real ambiguity.
+- Strong CTAs matter. End with a precise next action.
+- After the framework is known, a lightweight prompt is enough: “Following the 9-step framework: [request]. Please flag any unclear points and end with FC and CTA.”
 
-- Ask the AI to Mirror the System: Include in your CTA: “Please respond using relevant 9-step tags where helpful.”
+---
 
-- Strong CTA is Essential: Always end prompts with a clear CTA.
+## Examples
 
-- Tiered Approach: Use Full Template for high-stakes work. Use Lightweight for quick questions.
+### Self-thinking / planning note
+ED: “Launch-ready” = core flows work, billing is live, and basic docs exist.  
+LS: finalize pricing → migrate to VPS → test webhooks → write minimal docs.  
+CA: if webhook testing takes >2 days, ship without usage-based limits first.  
+CTA: decide on the VPS size by Friday.
 
-## Templates for AI Interactions
+### Light human update (no labeled ED)
+“Quick update on the scheduling module. By complete I mean tested and documented.  
+If we can wrap this by end of week, great; otherwise early next week is fine.  
+Any concerns or assumptions I should check?”
 
-### 1. Full AI System Prompt (Best for new projects)
+### Agent request (core tags)
+ED: success = the function handles the three edge cases listed below and includes a short comment on each.  
+[main request]  
+FC: Any part of the spec unclear or any assumptions you need confirmed before writing code?  
+CTA: Please implement the function and note any deviations from the spec.
 
-Instruction: Paste the entire "The 9 Steps" section first, then add relevant details to this template:
+---
+
+## Templates
+
+### Full (new project or high-stakes, mainly for agents)
+Paste the relevant steps (or the full list) first, then:
 
 ```
 [ED: ...]
-[LS: ...]
-[CA: ...]
-[QP: ...]
-[VT: ...]
-[EC: ...]
-[RA: audience=AI; style=structured_and_precise; intent=high_quality_collaboration]
+[LS: ...]          # optional
+[FC: Any assumptions to check? Questions?]
+[CTA: ...]
 
-[Your main request here...]
-
-[FC: Any parts unclear or assumptions I should verify?]
-[CTA: Please respond using relevant tags from the 9-step framework and provide the requested output.]
+[Your request]
 ```
 
-### 2. Lightweight AI Template (after framework is shared)
-
-"Following the 9-step communication framework: [your plain English request]. Please be precise, use tags where they add clarity, and end your response with FC and CTA sections."
+### Lightweight (framework already known)
+“Following the 9-step framework: [plain-English request]. Flag anything unclear and end with FC and CTA.”
